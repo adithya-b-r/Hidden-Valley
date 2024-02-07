@@ -697,7 +697,7 @@ body {
     color: black;
     background: white;
     margin: 0 .66vh;
-    border-radius: 50%;
+    border-radius: 15px;
     text-decoration: none;
     transition: all ease-in-out .2s;
 }
@@ -1054,6 +1054,9 @@ body {
     }
     
     .box-cont .box2 a{
-        /* font-size: small; */
+        font-size: 3vh;
+        line-height: 5.5vh;
+        height: 5.5vh;
+        width: 5.5vh;
     }
 }
