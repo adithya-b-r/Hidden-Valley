@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/favi.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Scientica 2k24</title>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/bb5440d141.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo">
+            <h1 class="logo-glow">Scientica24</h1>
+            <i id="toggle1" class="fa-solid fa-bars fa-2xl"></i>
+            <i id="toggle2" class="fa-solid fa-xmark fa-2xl"></i>
+        </div>
+
+        <div class="dropdown-menu">
+            <a href="#home"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#events"><li>Events</li></a>
+            <a href="#rules"><li>Rules</li></a>
+            <a href="#contact"><li>contact</li></a>
+            <a href="/Scientica2022.pdf" download="Scientica-2024.pdf"><li>Brochure</li></a>
+        </div>
+
+        <ul class="nav-ul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#rules">Rules</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="/Scientica2022.pdf" download="Scientica-2024.pdf">Brochure</a></li>
+            <div id="marker"></div>
+            <script>
+                let marker = document.querySelector('#marker');
+                let item = document.querySelectorAll('nav li');
+
+                window.onload = function () {
+                    let marker = document.querySelector('#marker');
+                    let homeItem = document.querySelector('li a[href="#home"]');
+
+                    if (homeItem) {
+                        marker.style.left = homeItem.offsetLeft + 'px';
+                        marker.style.width = homeItem.offsetWidth + 'px';
+                    }
+                }
+
+                function indicator(e) {
+                    marker.style.left = e.offsetLeft + 'px';
+                    marker.style.width = e.offsetWidth + 'px';
+                }
+
+                item.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        indicator(e.target);
+                    });
+                });
+            </script>
+        </ul>
+        <div class="reg-now">
+            <button class="neon-button" type="button">Register Now</button>
+        </div>
+    </nav>
+    <div class="page-group">
+        <div class="bg">
+            <div class="bubbles">
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+            </div>
+        </div>
+        <div id="home" class="home">
+            <div class="home-text">
+                <h1>Scientica 2024</h1>
+                <h3>Pioneer The Frontiers</h3>
+                <p>National Level Inter-Collegiate Fest
+                    <br>
+                    March 11 - 12, 2023
+                </p>
+                <div class="reg-now">
+                    <button class="neon-button" type="button">Register Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="about">
+            <div class="about-cont">
+
+                <h1 class="neon-fire">About the Institution</h1>
+                <p>Canara College with its noble vision to prepare educationally empowered and culturally vibrant
+                    students;
+                    is a prestigious institute for higher learning, well acclaimed to have its deep-rooted existence
+                    since
+                    1973 with its moral ideas, rich core values and fusion of cultural ethos. It has a glorious history
+                    and
+                    legacy in the field of imparting value-based, character building education to its aspirants. True to
+                    its
+                    philosophy of commitment towards offering quality education at an affordable cost, it is located
+                    centrally in the coastal educational hub of Mangaluru city. The institution is pioneered by a great
+                    visionary and philanthropist our revered founder Late Sri Ammembal Subba Rao Pai.</p>
+                <br><br>
+                <h1 class="neon-fire">About Scientica 24</h1>
+                <p>‘Scientica 24’ aims to inspire and nurture interest and appreciation of Science and Information
+                    Technology amongst young people. It explores and develops new technologies that push the limits of
+                    what
+                    is currently possible.</p>
+            </div>
+        </div>
+        <div id="events" class="events">
+            <div class="box-main">
+                <h1>events</h1>
+                <div class="box-cont">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Byte Bash</p>
+                            <p>[Coding Event]</p>
+                            <button class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Wesign Wizard</p>
+                            <p>[Web Designing Event]</p>
+                            <button class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Cool Nerd</p>
+                            <p>[IT Manager Event]</p>
+                            <button class="btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-cont">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Ace It Up</p>
+                            <p>[Gaming Event]</p>
+                            <button class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Aikyam</p>
+                            <p>[G20 Event]</p>
+                            <button class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Aurora</p>
+                            <p>[Physics Event]</p>
+                            <button class="btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-cont">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Khemeia</p>
+                            <p>[Chemistry Event]</p>
+                            <button class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Mathware</p>
+                            <p>[Mathematics Event]</p>
+                            <button class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Mighty Chondrias</p>
+                            <p>[Variety Event]</p>
+                            <button class="btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rules" class="rules">
+            <div class="rules-container">
+                <div class="ribbon-box">
+                    <div class="ribbon">
+                        <h1>Rules & Regulations</h1>
+                    </div>
+                </div>
+                <div class="rules-grp">
+                    <ul>
+                        <li>The Fest is open to undergraduate students of Science & IT.</li>
+                        <li>Only one team with maximum 14 participants per college is allowed.</li>
+                        <li>Teams must confirm their participation by contacting the faculty/ student conveners on or
+                            before March 9, 2024.</li>
+                        <li>Participants are expected to report by 8:30 AM on March 11, 2024.</li>
+                        <li>Participants must be dressed in formal attire on both the days of the fest.</li>
+                        <li>Participants are expected to have their own personal accessories and gadgets.</li>
+                        <li>The participating teams must abide by all the rules and regulations.</li>
+                        <li>Any kind of disrespectful behaviour will not be tolerated and will lead to entire team's
+                            disqualification.</li>
+                        <li>Only those teams which participate in all the events are eligible for the
+                            overallchampionship.</li>
+                        <li>Overall trophy will be awarded based on maximum points scored in all events.</li>
+                        <li>The organizers reserve the right to take decisions and amend the rules and regulations of
+                            any event.</li>
+                        <li>Judges and Organizers decisions are final and binding.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact">
+            <div class="box-cont">
+                <div class="box1">
+                    <div class="contact-us">
+                        <h1>Contact</h1>
+                        <div class="address">
+                            <!-- <h1>College Address</h1> -->
+                            <p> <span class="cn">Canara College</span> <br>
+                                Mahatma Gandhi Road, Kodialbail, <br>
+                                Mangaluru – 575003,<br>
+                                Dakshina Kannada District, Karnataka</p>
+                            <br>
+                            
+                            <p><i class="fa-solid fa-phone fa-bounce"> </i> +91 8242492366</p>
+                            <p><i class="fa-regular fa-envelope fa-bounce"> </i> contact@canaracollege.org</p>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <h1>Quick Links</h1>
+                        <li><i class="fa-solid fa-arrow-right fa-xs"></i><a href="#home">Home</a></li>
+                        <li><i class="fas fa-arrow-right fa-xs"></i><a href="#about">About</a></li>
+                        <li><i class="fas fa-arrow-right fa-xs"></i><a href="#events">Events</a></li>
+                        <li><i class="fas fa-arrow-right fa-xs"></i><a href="#rules">Rules</a></li>
+                        <li><i class="fas fa-arrow-right fa-xs"></i><a href="/Scientica2022.pdf"
+                                download="Scientica-2024.pdf">Download Brochure</a></li>
+                    </div>
+                    <div class="map">
+                        <!-- Google Maps -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.45212601554!2d74.83896660978672!3d12.87862321685923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba350a13025ca43%3A0xc377faaf3db7a9c3!2sCanara%20College!5e0!3m2!1sen!2sin!4v1707029359590!5m2!1sen!2sin"
+                            style=" height: 100%; width:100%; border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="box2">
+                    <a href="https://www.canaracollege.com/" class="fa-solid fa-house"></a>
+                    <a href="https://www.facebook.com/canaracollegemangaluru" class="fab fa-facebook-f"></a>
+                    <a href="https://www.instagram.com/canara.college_official" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/school/canara-college" class="fab fa-linkedin"></a>
+                    <a href="https://www.youtube.com/@CanaraCollege-zm3wz/" class="fab fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        if (window.innerWidth > 600) {
+            VanillaTilt.init(document.querySelectorAll(".box"), {
+                max: 20,
+                speed: 400
+            });
+
+            VanillaTilt.init(document.querySelectorAll(".home-text"), {
+                max: 10,
+                speed: 100
+            });
+        }
+    </script>
+</body>
+</html>
