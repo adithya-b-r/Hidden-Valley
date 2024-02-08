@@ -10,12 +10,13 @@
 // console.log("Viewport height: " + viewportHeight + "px");
 
 // }
+
 document.addEventListener("DOMContentLoaded", function() {
-    const toggleButton = document.getElementById("toggle1");
-    const closeButton = document.getElementById("toggle2");
-    const dropdownMenu = document.querySelector(".dropdown-menu");
-    const navbarItems = document.querySelectorAll(".dropdown-menu a");
-});
+    var toggleButton = document.getElementById("toggle1");
+    var closeButton = document.getElementById("toggle2");
+    var dropdownMenu = document.querySelector(".dropdown-menu");
+    var navbarItems = document.querySelectorAll(".dropdown-menu a");
+
     navbarItems.forEach(function(item) {
         item.addEventListener("click", function(){
             toggleButton.style.display = "block";
@@ -43,3 +44,4 @@ document.addEventListener("DOMContentLoaded", function() {
         toggleButton.style.display = "block";
         closeButton.style.display = "none";
     });
+});
