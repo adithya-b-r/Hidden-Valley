@@ -10,11 +10,12 @@
 // console.log("Viewport height: " + viewportHeight + "px");
 
 // }
+document.addEventListener("DOMContentLoaded", function() {
     var toggleButton = document.getElementById("toggle1");
     var closeButton = document.getElementById("toggle2");
     var dropdownMenu = document.querySelector(".dropdown-menu");
     var navbarItems = document.querySelectorAll(".dropdown-menu a");
-
+});
     navbarItems.forEach(function(item) {
         item.addEventListener("click", function(){
             toggleButton.style.display = "block";
