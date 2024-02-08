@@ -910,6 +910,7 @@ body {
     .events .box-main .box-cont .box {
         margin-bottom: 4vh;
         width: 36vh;
+        cursor: default;
     }
 
     .events .evnt-name .btn{
