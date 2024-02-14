@@ -7,15 +7,38 @@
     <link rel="icon" href="imgs/favi.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Scientica 2k24</title>
-    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/bb5440d141.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav class="nav-bar">
         <div class="logo">
-            <h1 class="logo-glow" class="glitch" data-text="GLITCH">Scientica24</h1>
+            <h1 class="logo-glow">Scientica24</h1>
+            <i id="toggle1" class="fa-solid fa-bars fa-2xl"></i>
+            <i id="toggle2" class="fa-solid fa-xmark fa-2xl"></i>
         </div>
+
+        <div class="dropdown-menu">
+            <a href="#home">
+                <li>Home</li>
+            </a>
+            <a href="#about">
+                <li>About</li>
+            </a>
+            <a href="#events">
+                <li>Events</li>
+            </a>
+            <a href="#rules">
+                <li>Rules</li>
+            </a>
+            <a href="#contact">
+                <li>contact</li>
+            </a>
+            <a href="/Scientica2022.pdf" download="Scientica-2024.pdf">
+                <li>Brochure</li>
+            </a>
+        </div>
+
         <ul class="nav-ul">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -51,7 +74,7 @@
             </script>
         </ul>
         <div class="reg-now">
-            <button class="neon-button" type="button">Register Now</button>
+            <button onclick="redirectToRegistration()" class="neon-button" type="button">Register Now</button>
         </div>
     </nav>
     <div class="page-group">
@@ -103,7 +126,13 @@
             <div class="home-text">
                 <h1>Scientica 2024</h1>
                 <h3>Pioneer The Frontiers</h3>
-                <p>Under Graduate Inter - Collagiate Science and IT Fest</p>
+                <p>National Level Inter-Collegiate Fest
+                    <br>
+                    March 11 - 12, 2023
+                </p>
+                <div class="reg-now">
+                    <button onclick="redirectToRegistration()" class="neon-button" type="button">Register Now</button>
+                </div>
             </div>
         </div>
         <div id="about" class="about">
@@ -140,6 +169,7 @@
                         <div class="evnt-name">
                             <p>Byte Bash</p>
                             <p>[Coding Event]</p>
+                            <button onclick="displaytoggle('e1')" class="btn">Read More</button>
                         </div>
                     </div>
                     <div class="box">
@@ -149,6 +179,7 @@
                         <div class="evnt-name">
                             <p>Wesign Wizard</p>
                             <p>[Web Designing Event]</p>
+                            <button onclick="displaytoggle('e2')" class="btn">Read More</button>
                         </div>
                     </div>
                     <div class="box">
@@ -158,23 +189,9 @@
                         <div class="evnt-name">
                             <p>Cool Nerd</p>
                             <p>[IT Manager Event]</p>
+                            <button onclick="displaytoggle('e3')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="/imgs/favi.jpg">
-                        </div>
-                        <div class="evnt-name">
-                            <p>Ace It Up</p>
-                            <p>[Gaming Event]</p>
-                        </div>
-                    </div>
-                    <!-- <div class="box">
-                        <div class="img-box">
-                            <img src="/imgs/favi.jpg">
-                        </div>
-                        Event 5
-                    </div> -->
                 </div>
                 <div class="box-cont">
                     <div class="box">
@@ -182,8 +199,9 @@
                             <img src="/imgs/favi.jpg">
                         </div>
                         <div class="evnt-name">
-                            <p>Aurora</p>
-                            <p>[Physics Event]</p>
+                            <p>Ace It Up</p>
+                            <p>[Gaming Event]</p>
+                            <button onclick="displaytoggle('e4')" class="btn">Read More</button>
                         </div>
                     </div>
                     <div class="box">
@@ -191,8 +209,31 @@
                             <img src="/imgs/favi.jpg">
                         </div>
                         <div class="evnt-name">
+                            <p>Aikyam</p>
+                            <p>[G20 Event]</p>
+                            <button onclick="displaytoggle('e5')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Aurora</p>
+                            <p>[Physics Event]</p>
+                            <button onclick="displaytoggle('e6')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-cont">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <div class="evnt-name">
                             <p>Khemeia</p>
                             <p>[Chemistry Event]</p>
+                            <button onclick="displaytoggle('e7')" class="btn">Read More</button>
                         </div>
                     </div>
                     <div class="box">
@@ -202,6 +243,7 @@
                         <div class="evnt-name">
                             <p>Mathware</p>
                             <p>[Mathematics Event]</p>
+                            <button onclick="displaytoggle('e8')" class="btn">Read More</button>
                         </div>
                     </div>
                     <div class="box">
@@ -211,14 +253,9 @@
                         <div class="evnt-name">
                             <p>Mighty Chondrias</p>
                             <p>[Variety Event]</p>
+                            <button onclick="displaytoggle('e9')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <!-- <div class="box">
-                        <div class="img-box">
-                            <img src="/imgs/favi.jpg">
-                        </div>
-                        Event 10
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -253,60 +290,587 @@
         </div>
         <div id="contact" class="contact">
             <div class="box-cont">
-            <div class="box1">
-                <div class="contact-us">
-                    <h1>Contact</h1>
-                    <div class="address">
-                        <!-- <h1>College Address</h1> -->
-                        <p> <span class="cn">Canara College</span> <br>
-                            Mahatma Gandhi Road, Kodialbail, <br>
-                            Mangaluru – 575003,<br>
-                            Dakshina Kannada District, Karnataka</p>
-                        <br>
-                        <br>
-                        <p><i class="fa-solid fa-phone fa-bounce"> </i> +91 8242492366</p>
-                        <p><i class="fa-regular fa-envelope fa-bounce"> </i> contact@canaracollege.org</p>
+                <div class="box1" id="box1">
+                    <div class="contact-us">
+                        <h1>Contact</h1>
+                        <div class="address">
+                            <!-- <h1>College Address</h1> -->
+                            <p> <span class="cn">Canara College</span> <br>
+                                Mahatma Gandhi Road, Kodialbail, <br>
+                                Mangaluru – 575003,<br>
+                                Dakshina Kannada District, Karnataka</p>
+                            <br>
+
+                            <p><i class="fa-solid fa-phone fa-bounce"> </i> +91 8242492366</p>
+                            <p><i class="fa-regular fa-envelope fa-bounce"> </i> contact@canaracollege.org</p>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <h1>Quick Links</h1>
+                        <li><i class="fa-solid fa-arrow-right fa-xs"></i><a href="#home">Home</a></li>
+                        <li><i class="fas fa-arrow-right fa-xs"></i><a href="#about">About</a></li>
+                        <li><i class="fas fa-arrow-right fa-xs"></i><a href="#events">Events</a></li>
+                        <li><i class="fas fa-arrow-right fa-xs"></i><a href="#rules">Rules</a></li>
+                        <li><i class="fas fa-arrow-right fa-xs"></i><a href="/Scientica2022.pdf"
+                                download="Scientica-2024.pdf">Download Brochure</a></li>
+                    </div>
+                    <div class="map">
+                        <!-- Google Maps -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.45212601554!2d74.83896660978672!3d12.87862321685923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba350a13025ca43%3A0xc377faaf3db7a9c3!2sCanara%20College!5e0!3m2!1sen!2sin!4v1707029359590!5m2!1sen!2sin"
+                            style=" height: 100%; width:100%; border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="links">
-                    <h1>Quick Links</h1>
-                    <li><i class="fa-solid fa-arrow-right fa-xs"></i><a href="#home">Home</a></li>
-                    <li><i class="fas fa-arrow-right fa-xs"></i><a href="#about">About</a></li>
-                    <li><i class="fas fa-arrow-right fa-xs"></i><a href="#events">Events</a></li>
-                    <li><i class="fas fa-arrow-right fa-xs"></i><a href="#rules">Rules</a></li>
-                    <li><i class="fas fa-arrow-right fa-xs"></i><a href="/Scientica2022.pdf"
-                            download="Scientica-2024.pdf">Download Brochure</a></li>
+                <div class="box2">
+                    <a href="https://www.canaracollege.com/" class="fa-solid fa-house"></a>
+                    <a href="https://www.facebook.com/canaracollegemangaluru" class="fab fa-facebook-f"></a>
+                    <a href="https://www.instagram.com/canara.college_official" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/school/canara-college" class="fab fa-linkedin"></a>
+                    <a href="https://www.youtube.com/@CanaraCollege-zm3wz/" class="fab fa-youtube"></a>
                 </div>
-                <div class="map">
-                    <!-- Google Maps -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.45212601554!2d74.83896660978672!3d12.87862321685923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba350a13025ca43%3A0xc377faaf3db7a9c3!2sCanara%20College!5e0!3m2!1sen!2sin!4v1707029359590!5m2!1sen!2sin"
-                        style=" height: 100%; width:100%; border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-            <div class="box2">
-                <a href="https://www.canaracollege.com/" class="fa-solid fa-house"></a>
-                <a href="https://www.facebook.com/canaracollegemangaluru" class="fab fa-facebook-f"></a>
-                <a href="https://www.instagram.com/canara.college_official" class="fab fa-instagram"></a>
-                <a href="https://www.linkedin.com/school/canara-college" class="fab fa-linkedin"></a>
-                <a href="https://www.youtube.com/@CanaraCollege-zm3wz/" class="fab fa-youtube"></a>
             </div>
         </div>
-    </div>
+
+        <div id="e1" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Byte Bash</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <br>
+                        <h1>Coding Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Embark on a cosmic coding journey with "AstroWeb," where the
+                                universe of web design meets
+                                the boundless expanse of creativity. This event is a platform for passionate web
+                                designers to showcase their skills, test their knowledge, and reach for the stars in the
+                                digital realm.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant from each college. <br>
+                                2. Code editors and PCs are provided. <br>
+                                3. Knowledge of HTML, CSS, and JavaScript is necessary. <br>
+                                4. No electronic gadgets are allowed. <br>
+                                5. There will be eliminations in particular rounds. <br>
+                                6. Event organizers' decisions will be final.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/nobita.png">
+                                <h4>Nobita Nobi<br>
+                                    +91 9436275835
+                                </h4>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/shizuka.jpg">
+                                <h4>Shizuka Minamoto<br>
+                                    +91 8736364938
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e2" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Wesign Wizard</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <br>
+                        <h1>Web Designing Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Embark on a cosmic coding journey with "AstroWeb," where the
+                                universe of web design meets
+                                the boundless expanse of creativity. This event is a platform for passionate web
+                                designers to showcase their skills, test their knowledge, and reach for the stars in the
+                                digital realm.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant from each college. <br>
+                                2. Code editors and PCs are provided. <br>
+                                3. Knowledge of HTML, CSS, and JavaScript is necessary. <br>
+                                4. No electronic gadgets are allowed. <br>
+                                5. There will be eliminations in particular rounds. <br>
+                                6. Event organizers' decisions will be final.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/nobita.png">
+                                <h4>Nobita Nobi<br>
+                                    +91 9436275835
+                                </h4>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/shizuka.jpg">
+                                <h4>Shizuka Minamoto<br>
+                                    +91 8736364938
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e3" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Cool Nerd</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <br>
+                        <h1>IT Manager Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Embark on a cosmic coding journey with "AstroWeb," where the
+                                universe of web design meets
+                                the boundless expanse of creativity. This event is a platform for passionate web
+                                designers to showcase their skills, test their knowledge, and reach for the stars in the
+                                digital realm.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant from each college. <br>
+                                2. Code editors and PCs are provided. <br>
+                                3. Knowledge of HTML, CSS, and JavaScript is necessary. <br>
+                                4. No electronic gadgets are allowed. <br>
+                                5. There will be eliminations in particular rounds. <br>
+                                6. Event organizers' decisions will be final.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/nobita.png">
+                                <h4>Nobita Nobi<br>
+                                    +91 9436275835
+                                </h4>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/shizuka.jpg">
+                                <h4>Shizuka Minamoto<br>
+                                    +91 8736364938
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e4" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Ace It Up</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <br>
+                        <h1>Gaming Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Embark on a cosmic coding journey with "AstroWeb," where the
+                                universe of web design meets
+                                the boundless expanse of creativity. This event is a platform for passionate web
+                                designers to showcase their skills, test their knowledge, and reach for the stars in the
+                                digital realm.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant from each college. <br>
+                                2. Code editors and PCs are provided. <br>
+                                3. Knowledge of HTML, CSS, and JavaScript is necessary. <br>
+                                4. No electronic gadgets are allowed. <br>
+                                5. There will be eliminations in particular rounds. <br>
+                                6. Event organizers' decisions will be final.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/nobita.png">
+                                <h4>Nobita Nobi<br>
+                                    +91 9436275835
+                                </h4>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/shizuka.jpg">
+                                <h4>Shizuka Minamoto<br>
+                                    +91 8736364938
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e5" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Aikyam</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <br>
+                        <h1>G20 Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Embark on a cosmic coding journey with "AstroWeb," where the
+                                universe of web design meets
+                                the boundless expanse of creativity. This event is a platform for passionate web
+                                designers to showcase their skills, test their knowledge, and reach for the stars in the
+                                digital realm.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant from each college. <br>
+                                2. Code editors and PCs are provided. <br>
+                                3. Knowledge of HTML, CSS, and JavaScript is necessary. <br>
+                                4. No electronic gadgets are allowed. <br>
+                                5. There will be eliminations in particular rounds. <br>
+                                6. Event organizers' decisions will be final.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/nobita.png">
+                                <h4>Nobita Nobi<br>
+                                    +91 9436275835
+                                </h4>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/shizuka.jpg">
+                                <h4>Shizuka Minamoto<br>
+                                    +91 8736364938
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e6" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Aurora</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <br>
+                        <h1>Physics Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Embark on a cosmic coding journey with "AstroWeb," where the
+                                universe of web design meets
+                                the boundless expanse of creativity. This event is a platform for passionate web
+                                designers to showcase their skills, test their knowledge, and reach for the stars in the
+                                digital realm.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant from each college. <br>
+                                2. Code editors and PCs are provided. <br>
+                                3. Knowledge of HTML, CSS, and JavaScript is necessary. <br>
+                                4. No electronic gadgets are allowed. <br>
+                                5. There will be eliminations in particular rounds. <br>
+                                6. Event organizers' decisions will be final.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/nobita.png">
+                                <h4>Nobita Nobi<br>
+                                    +91 9436275835
+                                </h4>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/shizuka.jpg">
+                                <h4>Shizuka Minamoto<br>
+                                    +91 8736364938
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e7" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Khemeia</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <br>
+                        <h1>Coding Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Embark on a cosmic coding journey with "AstroWeb," where the
+                                universe of web design meets
+                                the boundless expanse of creativity. This event is a platform for passionate web
+                                designers to showcase their skills, test their knowledge, and reach for the stars in the
+                                digital realm.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant from each college. <br>
+                                2. Code editors and PCs are provided. <br>
+                                3. Knowledge of HTML, CSS, and JavaScript is necessary. <br>
+                                4. No electronic gadgets are allowed. <br>
+                                5. There will be eliminations in particular rounds. <br>
+                                6. Event organizers' decisions will be final.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/nobita.png">
+                                <h4>Nobita Nobi<br>
+                                    +91 9436275835
+                                </h4>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/shizuka.jpg">
+                                <h4>Shizuka Minamoto<br>
+                                    +91 8736364938
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e8" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Mathware</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <br>
+                        <h1>Chemistry Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Embark on a cosmic coding journey with "AstroWeb," where the
+                                universe of web design meets
+                                the boundless expanse of creativity. This event is a platform for passionate web
+                                designers to showcase their skills, test their knowledge, and reach for the stars in the
+                                digital realm.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant from each college. <br>
+                                2. Code editors and PCs are provided. <br>
+                                3. Knowledge of HTML, CSS, and JavaScript is necessary. <br>
+                                4. No electronic gadgets are allowed. <br>
+                                5. There will be eliminations in particular rounds. <br>
+                                6. Event organizers' decisions will be final.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/nobita.png">
+                                <h4>Nobita Nobi<br>
+                                    +91 9436275835
+                                </h4>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/shizuka.jpg">
+                                <h4>Shizuka Minamoto<br>
+                                    +91 8736364938
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e9" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Mighty Chondrias</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/favi.jpg">
+                        </div>
+                        <br>
+                        <h1>Variety Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Embark on a cosmic coding journey with "AstroWeb," where the
+                                universe of web design meets
+                                the boundless expanse of creativity. This event is a platform for passionate web
+                                designers to showcase their skills, test their knowledge, and reach for the stars in the
+                                digital realm.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant from each college. <br>
+                                2. Code editors and PCs are provided. <br>
+                                3. Knowledge of HTML, CSS, and JavaScript is necessary. <br>
+                                4. No electronic gadgets are allowed. <br>
+                                5. There will be eliminations in particular rounds. <br>
+                                6. Event organizers' decisions will be final.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/nobita.png">
+                                <h4>Nobita Nobi<br>
+                                    +91 9436275835
+                                </h4>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/shizuka.jpg">
+                                <h4>Shizuka Minamoto<br>
+                                    +91 8736364938
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+
     </div>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
-        VanillaTilt.init(document.querySelectorAll(".box"), {
-            max: 10,
-            speed: 400
-        });
+        if (window.innerWidth > 600) {
+            VanillaTilt.init(document.querySelectorAll(".box"), {
+                max: 20,
+                speed: 400
+            });
 
-        VanillaTilt.init(document.querySelectorAll(".home-text"), {
-            max: 10,
-            speed: 100
-        });
+            VanillaTilt.init(document.querySelectorAll(".home-text"), {
+                max: 10,
+                speed: 100
+            });
+        }
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
