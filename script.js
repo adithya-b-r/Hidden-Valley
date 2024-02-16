@@ -7,7 +7,9 @@ const e6 = document.querySelector("#e6");
 const e7 = document.querySelector("#e7");
 const e8 = document.querySelector("#e8");
 const e9 = document.querySelector("#e9");
-const close = document.getElementById("close")
+const close = document.getElementById("close");
+const pgDiv = document.getElementById("pg");
+const nb =  document.getElementById("navbar");
 
 document.addEventListener("DOMContentLoaded", function () {
     var toggleButton = document.getElementById("toggle1");
@@ -23,32 +25,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Add click event listener to toggle button
     toggleButton.addEventListener("click", function () {
-        // Toggle visibility of the dropdown menu
         dropdownMenu.style.display = (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") ? "block" : "none";
-
-        // Toggle visibility of the toggle buttons
         toggleButton.style.display = "none";
         closeButton.style.display = "block";
     });
 
-    // Add click event listener to close button
     closeButton.addEventListener("click", function () {
-        // Toggle visibility of the dropdown menu
         dropdownMenu.style.display = "none";
-
-        // Toggle visibility of the toggle buttons
         toggleButton.style.display = "block";
         closeButton.style.display = "none";
     });
 
-    // for (let i = 1; i <= 9; i++) {
-    //     let element = document.getElementById('e' + i);
-    //     if (element) {
-    //         element.style.display = 'none';
-    //     }
-    // }
+    console.log("cat");
 });
 
 function redirectToRegistration() {
@@ -67,3 +56,15 @@ function hide() {
         element.style.display = 'none';
     }
 }
+
+pgDiv.addEventListener('scroll', function() {
+    // console.log('Div scrolled!');
+    // console.log(pgDiv.scrollTop);
+    if(pgDiv.scrollTop >= 115){
+        nb.style.backgroundColor = "#000";
+        nb.style.backdropFilter = "blur(6px)"
+    }
+    else{
+        nb.style.backgroundColor = "#00000060";
+    }
+});
