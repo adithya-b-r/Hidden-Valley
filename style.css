@@ -229,10 +229,6 @@ body {
     z-index: 20;
 }
 
-.home{
-    padding-top: 5%;
-}
-
 .events {
     height: fit-content;
 }
@@ -959,6 +955,10 @@ body {
     }
 
     /*Home*/
+
+    .home{
+    padding-top: 10%;
+    }
 
     .home .home-text h1 {
         font-size: 10vh;
