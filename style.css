@@ -266,7 +266,7 @@ body {
         0 0 100px #4fc3dc;
     margin: 0 4px;
     animation: animate 1s linear infinite;
-    animation-duration: calc(100s / var(--i));
+    animation-duration: calc(150s / var(--i));
 }
 
 .bubbles span:nth-child(even) {
