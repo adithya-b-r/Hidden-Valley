@@ -229,6 +229,10 @@ body {
     z-index: 20;
 }
 
+.home{
+    padding-top: 5%;
+}
+
 .events {
     height: fit-content;
 }
