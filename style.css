@@ -46,6 +46,7 @@ body {
     width: 100%;
     justify-content: space-around;
     background-color: #00000060;
+    backdrop-filter: blur(6px);
     height: 8.8vh;
     z-index: 999;
     cursor: pointer;
