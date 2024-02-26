@@ -57,7 +57,7 @@ function hide() {
     }
 }
 
-pgDiv.addEventListener('scroll', function() {
+/*pgDiv.addEventListener('scroll', function() {
     // console.log('Div scrolled!');
     // console.log(pgDiv.scrollTop);
     if(pgDiv.scrollTop >= 115){
@@ -67,4 +67,4 @@ pgDiv.addEventListener('scroll', function() {
     else{
         nb.style.backgroundColor = "#00000060";
     }
-});
+});*/
