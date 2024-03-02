@@ -957,9 +957,9 @@ body {
     /*Home*/
 
     .home{
-    padding-top: 10%;
+        padding-top: 10%;
     }
-
+    
     .home .home-text h1 {
         font-size: 10vh;
         margin: -3vh 0 1vh 0;
