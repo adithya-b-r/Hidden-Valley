@@ -126,7 +126,7 @@
         <div id="home" class="home">
             <div class="home-text">
                 <h1>Scientica 2024</h1>
-                <h3>Pioneer The Frontiers</h3>
+                <h3>Cluster The Creations</h3>
                 <p>National Level Inter-Collegiate Fest
                     <br>
                     March 11 - 12, 2023
@@ -202,7 +202,7 @@
                         <div class="evnt-name">
                             <p>Scout-It-Out</p>
                             <p>[Gaming Event]</p>
-                            <button onclick="displaytoggle('e6')" class="btn">Read More</button>
+                            <button onclick="displaytoggle('e4')" class="btn">Read More</button>
                         </div>
                     </div>
                     <div class="box">
@@ -267,6 +267,60 @@
                             <p>Da Vinci's Dazzle</p>
                             <p>[Variety Event]</p>
                             <button onclick="displaytoggle('e10')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="std-cord">
+            <div class="std-box">
+                <h1>Student Conveners</h1>
+
+                <div class="std-cont">
+                    <div class="b1">
+                        <div class="std">
+                            <img src="/imgs/nobita.png">
+                            <a href="tel:+918861930329">
+                                <h4>Mr. Karthik C Malsekar<br>
+                                    +91 8861930329
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="std">
+                            
+                            <a href="tel:+916361965792">
+                                <h4>Ms. Swathi Naik<br>
+                                    +91 6361965792
+                                </h4>
+                            </a>
+                            <img src="/imgs/shizuka.jpg">
+                        </div>
+                    </div>
+
+                    <div class="b2">
+                        <div class="std">
+                            <img src="/imgs/shizuka.jpg">
+                            <a href="tel:+919544087237">
+                                <h4>Ms. Deeptika<br>
+                                    +91 9544087237
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="std">  
+                            <a href="tel:+917411007685">
+                                <h4>Mr. V Venkatesh<br>
+                                    +91 7411007685
+                                </h4>
+                            </a>
+                            <img src="/imgs/nobita.png">
+                        </div>
+                        <div class="std">
+                            <img src="/imgs/shizuka.jpg">
+                            <a href="tel:+918867143835">
+                                <h4>Ms. Manasvi Kharvi<br>
+                                    +91 8867143835
+                                </h4>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -921,6 +975,11 @@
         if (window.innerWidth > 600) {
             VanillaTilt.init(document.querySelectorAll(".box"), {
                 max: 20,
+                speed: 400
+            });
+
+            VanillaTilt.init(document.querySelectorAll(".std"), {
+                max: 10,
                 speed: 400
             });
 
