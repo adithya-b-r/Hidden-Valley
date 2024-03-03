@@ -1093,7 +1093,7 @@ body {
     }
 
     .home .reg-now button {
-        font-weight: 600;
+        font-weight: 800;
         animation: zoom 1s ease-in-out infinite alternate;
         color: #000;
     }
@@ -1160,7 +1160,7 @@ body {
     }
 
     .events .evnt-name .btn {
-        font-weight: 600;
+        font-weight: 800;
         font-size: 1.3rem;
     }
 
