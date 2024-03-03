@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         closeButton.style.display = "none";
     });
 
-    console.log("cat");
+    console.log("Developed by: Adithya B R");
 });
 
 function redirectToRegistration() {
