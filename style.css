@@ -225,7 +225,7 @@ body {
     justify-content: center;
     z-index: 5;
 
-    background-image: url(imgs/bg3.png);
+    background-image: url(imgs/bg3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -438,7 +438,7 @@ body {
     height: 45vh;
     transform-style: preserve-3d;
 
-    background-image: url(imgs/bg1.png);
+    background-image: url(imgs/bg1.jpg);
     object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
