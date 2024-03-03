@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function redirectToRegistration() {
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfvg90PtO9LT3RGCjHrO33Qi2MTUvstxZZW6Rbs5xxePeqDsQ/viewform";
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSebxXRqXTiBYSy77rbgYlqqw99jF0buI-JC7Aat1yK45_ITjQ/viewform";
 }
 
 function displaytoggle(item) {
@@ -50,7 +50,7 @@ function displaytoggle(item) {
 }
 
 function hide() {
-    for (let i = 1; i <= 9; i++) {
+    for (let i = 1; i <= 10; i++) {
         let element = document.getElementById('e' + i);
 
         element.style.display = 'none';
