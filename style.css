@@ -168,7 +168,6 @@ body {
         0 0 15px #ed69ab;
 }
 
-
 .dropdown-menu {
     position: absolute;
     top: 8.7vh;
@@ -225,6 +224,12 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 5;
+
+    background-image: url(imgs/bg3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
 }
 
 .home,
@@ -253,50 +258,7 @@ body {
 
 /* Background Animation */
 
-.bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.bubbles {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-.bubbles span {
-    position: relative;
-    min-width: 30px;
-    height: 30px;
-    background: #4fc3dc;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #4fc3dc44,
-        0 0 50px #4fc3dc,
-        0 0 100px #4fc3dc;
-    margin: 0 4px;
-    animation: animate 1s linear infinite;
-    animation-duration: calc(150s / var(--i));
-}
-
-.bubbles span:nth-child(even) {
-    background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d7544,
-        0 0 50px #ff2d75,
-        0 0 100px #ff2d75;
-}
-
-@keyframes animate {
-    0% {
-        transform: translateY(100vh) scale(0);
-    }
-
-    100% {
-        transform: translateY(-10vh) scale(1);
-    }
-}
+/* none */
 
 /* Home */
 
@@ -373,16 +335,21 @@ body {
     align-items: center;
     width: 90%;
     height: 90%;
-    border: 2px ridge #00ff00;
+    border: 4px ridge #00ff00;
     border-radius: 10px;
     z-index: 20;
     transform-style: preserve-3d;
     line-height: 4vh;
     text-shadow: 2px 2px 4px rgba(255, 251, 251, 0.217);
 
-    background-color: #171717;
+    background-color: #17171773;
     width: 92%;
     padding: 2vh 4vh 2vh 4vh;
+
+    /* background-image: url(imgs/bg6.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
 }
 
 .about-cont::before {
@@ -403,14 +370,14 @@ body {
     text-align: center;
     font-weight: 900;
     text-transform: uppercase;
-    color: #03deee;
+    color: #00eeff;
     line-height: 8vh;
     margin-bottom: 1.5vh;
 }
 
 .about-cont p {
     font-family: 'Quicksand', sans-serif;
-    color: #ffe0e0;
+    color: #ffffff;
     font-size: 2.8vh;
     font-weight: 600;
     text-align: justify;
@@ -461,7 +428,7 @@ body {
 .events .box-main .box-cont .box {
     margin-top: 2vh;
     border-radius: 10px;
-    border: 3px ridge cyan;
+    border: 4px ridge cyan;
     background-color: #1a1a1a;
     display: flex;
     flex-direction: column;
@@ -470,6 +437,12 @@ body {
     width: 38vh;
     height: 45vh;
     transform-style: preserve-3d;
+
+    background-image: url(imgs/bg1.png);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .box::before {
@@ -492,7 +465,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: #fff ridge 3px;
+    border: #fff solid 7px;
 }
 
 .box .img-box img {
@@ -522,10 +495,11 @@ body {
     margin-bottom: -9vh;
     margin-top: 4vh;
     background-color: #440156;
+    background-color: var(--neon-orange);
     height: 6vh;
     width: 20vh;
     border-radius: 10px;
-    border: 2px ridge #fff;
+    border: 3px ridge #fff;
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
@@ -756,7 +730,8 @@ body {
 }
 
 .evnt-details {
-    background-color: #000;
+    background-color: #0000006d;
+    backdrop-filter: blur(6px);
     border: 3px ridge cyan;
     border-radius: 10px;
     width: 80%;
@@ -974,7 +949,7 @@ body {
     line-height: 1.8rem;
     letter-spacing: 1.5px;
 
-    text-shadow: 2px 2px 2px rgba(255, 251, 251, 0.672);
+    /* text-shadow: 2px 2px 2px rgba(255, 251, 251, 0.672); */
 }
 
 .std-cont .b1 {
@@ -1002,7 +977,7 @@ body {
 .std-cont .std {
     margin-top: 2vh;
     border-radius: 10px;
-    border: 2px ridge var(--neon-turquoise);
+    border: 4px ridge var(--neon-turquoise);
     background-color: #1a1a1a;
     display: flex;
     flex-direction: row;
@@ -1034,7 +1009,7 @@ body {
 
     /* --NavBar-- */
     .nav-bar {
-        background-color: #000000;
+        /* background-color: #00000062; */
         cursor: default;
     }
 
@@ -1105,8 +1080,9 @@ body {
     }
 
     .home .home-text p {
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins", "sans-serif";
         font-size: 2.2vh;
+        font-weight: 400;
         margin: 1.8vh 0 1.8vh 0;
         letter-spacing: .5px;
     }
@@ -1117,8 +1093,9 @@ body {
     }
 
     .home .reg-now button {
-        font-weight: 800;
+        font-weight: 600;
         animation: zoom 1s ease-in-out infinite alternate;
+        color: #000;
     }
 
     @keyframes zoom {
@@ -1139,7 +1116,7 @@ body {
 
 
     .about .about-cont {
-        background-color: #171717;
+        background-color: #17171773;
         width: 92%;
         height: 100%;
         padding: 3vh 2vh 3vh 2vh;
@@ -1183,7 +1160,8 @@ body {
     }
 
     .events .evnt-name .btn {
-        font-weight: bolder;
+        font-weight: 600;
+        font-size: 1.3rem;
     }
 
     /*--Rules--*/
@@ -1383,7 +1361,7 @@ body {
     }
 
     .evnt-details {
-        background-color: #000;
+        background-color: #00000041;
         border: 3px ridge cyan;
         border-radius: 10px;
         width: 90%;
