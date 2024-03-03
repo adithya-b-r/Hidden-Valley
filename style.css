@@ -173,7 +173,7 @@ body {
     top: 8.7vh;
     width: 100%;
     height: 35vh;
-    background-color: #000000;
+    background-color: #00000060;
     backdrop-filter: blur(6px);
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -494,8 +494,7 @@ body {
     color: #fff;
     margin-bottom: -9vh;
     margin-top: 4vh;
-    background-color: #440156;
-    background-color: var(--neon-orange);
+    background-color: var(--neon-purple);
     height: 6vh;
     width: 20vh;
     border-radius: 10px;
@@ -906,7 +905,7 @@ body {
 }
 
 .std-cord h1 {
-    color:#e20737;
+    color: #e20737;
     font-size: 10vh;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -988,19 +987,17 @@ body {
 
     border-radius: 50px 10px;
 
-    background-image: linear-gradient(
-        345deg,
-        hsl(240deg 100% 20%) 1%,
-        hsl(283deg 100% 21%) 43%,
-        hsl(308deg 100% 23%) 50%,
-        hsl(323deg 100% 31%) 51%,
-        hsl(332deg 100% 37%) 51%,
-        hsl(338deg 100% 42%) 49%,
-        hsl(356deg 80% 55%) 49%,
-        hsl(12deg 92% 58%) 50%,
-        hsl(25deg 99% 55%) 57%,
-        hsl(37deg 100% 50%) 99%
-      );
+    background-image: linear-gradient(345deg,
+            hsl(240deg 100% 20%) 1%,
+            hsl(283deg 100% 21%) 43%,
+            hsl(308deg 100% 23%) 50%,
+            hsl(323deg 100% 31%) 51%,
+            hsl(332deg 100% 37%) 51%,
+            hsl(338deg 100% 42%) 49%,
+            hsl(356deg 80% 55%) 49%,
+            hsl(12deg 92% 58%) 50%,
+            hsl(25deg 99% 55%) 57%,
+            hsl(37deg 100% 50%) 99%);
 
     transform-style: preserve-3d;
 }
@@ -1009,7 +1006,7 @@ body {
 
     /* --NavBar-- */
     .nav-bar {
-        /* background-color: #00000062; */
+        background-color: #00000062;
         cursor: default;
     }
 
@@ -1048,6 +1045,7 @@ body {
 
     .dropdown-menu {
         display: block;
+        
     }
 
     .dropdown-menu {
