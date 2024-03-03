@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         dropdownMenu.style.display = (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") ? "block" : "none";
         toggleButton.style.display = "none";
         closeButton.style.display = "block";
+        
     });
 
     closeButton.addEventListener("click", function () {
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function redirectToRegistration() {
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSebxXRqXTiBYSy77rbgYlqqw99jF0buI-JC7Aat1yK45_ITjQ/viewform";
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfvg90PtO9LT3RGCjHrO33Qi2MTUvstxZZW6Rbs5xxePeqDsQ/viewform";
 }
 
 function displaytoggle(item) {
@@ -56,15 +57,3 @@ function hide() {
         element.style.display = 'none';
     }
 }
-
-/*pgDiv.addEventListener('scroll', function() {
-    // console.log('Div scrolled!');
-    // console.log(pgDiv.scrollTop);
-    if(pgDiv.scrollTop >= 115){
-        nb.style.backgroundColor = "#000";
-        nb.style.backdropFilter = "blur(6px)"
-    }
-    else{
-        nb.style.backgroundColor = "#00000060";
-    }
-});*/
