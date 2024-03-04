@@ -975,13 +975,13 @@ body {
 
 .std-cont .std {
     margin-top: 2vh;
-    border-radius: 10px;
     border: 4px ridge var(--neon-turquoise);
     background-color: #1a1a1a;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0rem 1.5rem;
     width: 55vh;
     height: 20vh;
 
