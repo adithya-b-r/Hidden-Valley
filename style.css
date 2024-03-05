@@ -506,6 +506,8 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .sc .btn{
