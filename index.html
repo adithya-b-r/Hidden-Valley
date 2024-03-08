@@ -246,6 +246,7 @@
                     loop: true,
                     grabCursor: true,
                     centeredSlides: true,
+                    lazy: true,
                     slidesPerView: "auto",
                     coverflowEffect: {
                         rotate: 50,
@@ -261,6 +262,10 @@
                     pagination: {
                         el: ".swiper-pagination",
                         clickable: true,
+                    },
+                    autoplay: {
+                        delay: 2000, // Set the delay between slides in milliseconds
+                        disableOnInteraction: false, // Set to true to disable autoplay when user interacts with the slider
                     },
                 });
             </script>
