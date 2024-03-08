@@ -247,11 +247,6 @@ body {
     padding-top: 7.7vh;
 }
 
-.rules,
-.std-cord{
-    padding-top: 8.2vh
-}
-
 .home .home-text {
     display: flex;
     flex-wrap: wrap;
