@@ -623,6 +623,20 @@ body {
     z-index: 999;
 }
 
+.contact .box-cont footer{
+    /* background-color: red; */
+    width: 70%;
+    padding: .5rem 0rem;
+    margin-top: .5rem;
+    text-align: center;
+}
+
+.contact .box-cont footer a{
+    text-decoration: none;
+    color: cyan;
+    font-weight: 800;
+}
+
 .contact h1 {
     color: var(--neon-turquoise);
 }
