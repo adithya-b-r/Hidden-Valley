@@ -9,6 +9,11 @@
     text-align: center;
 }
 
+.swiper-container {
+    transform: translate3d(0, 0, 0);
+}
+
+
 .swiper {
     width: 65%;
     margin-top: 7.7vh;
@@ -49,7 +54,6 @@
 }
 
 .swiper .swiper-slide {
-    margin-top: 2vh;
     border-radius: 10px;
     border: 4px ridge cyan;
     background-color: #1a1a1a;
@@ -163,7 +167,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* background-color: blue; */
         height: 65vh;
     }
 
@@ -178,7 +181,6 @@
         justify-content: center;
         width: 30vh;
         height: 45vh;
-        transform-style: preserve-3d;
         font-family: 'Teko', 'Oswald', sans-serif;
     }
 }
