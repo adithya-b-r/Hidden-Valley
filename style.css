@@ -170,12 +170,11 @@ body {
     top: 8.7vh;
     width: 100%;
     height: 35vh;
-    background-color: #000000b0;
+    background-color: #00000088;
     backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(10px);
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    transition: height 0.5s cubic-bezier(0.075, 0.885, 0.32, 1.275);
+    transition: height 0.2s cubic-bezier(0.075, 0.885, 0.32, 1.275);
 }
 
 .dropdown-menu li {
@@ -226,12 +225,13 @@ body {
     background-image: url(imgs/bg3.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 150%;
+    background-size: 100% 100%;
     object-fit: cover;
 }
 
 .home,
 .about,
+.events,
 .rules {
     display: flex;
     align-items: center;
@@ -241,7 +241,13 @@ body {
     z-index: 20;
 }
 
+
+.events {
+    height: fit-content;
+}
+
 .about,
+.events,
 .rules,
 .std-cord {
     padding-top: 7.7vh;
@@ -331,6 +337,11 @@ body {
     background-color: #17171773;
     width: 92%;
     padding: 2vh 4vh 2vh 4vh;
+
+    /* background-image: url(imgs/bg6.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
 }
 
 .about-cont::before {
@@ -368,6 +379,140 @@ body {
 }
 
 /* Events */
+
+.events {
+    background-color: transparent;
+    align-items: start;
+}
+
+.events .box-main {
+    display: inherit;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    align-items: center;
+    border-radius: 10px;
+    width: 92%;
+    height: 90%;
+    padding: 0rem 2rem 0 2rem;
+    z-index: 1;
+}
+
+.events .box-main h1 {
+    color: #FF4655;
+    z-index: -1;
+    font-size: 11.5vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    animation: glow2 1s ease-in-out infinite alternate;
+}
+
+.events .box-main .box-cont {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 8vh;
+    width: 100%;
+    height: 100%;
+}
+
+.events .box-main .box-cont .box {
+    margin-top: 2vh;
+    border-radius: 10px;
+    border: 4px ridge cyan;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 38vh;
+    height: 45vh;
+    transform-style: preserve-3d;
+
+    
+}
+
+.it .box{
+    background-image: url(imgs/bg1.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sc .box{
+    background-image: url(imgs/bg2.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: conic-gradient(from 90deg at 50% 50%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
+    filter: blur(10px);
+    transform: translate3d(0px, 0px, -1px);
+    clip-path: polygon(-100vmax -100vmax, 100vmax -100vmax, 100vmax 100vmax, -100vmax 100vmax, -100vmax -100vmax, 0 0, 0 100%, 100% 100%, 100% 0, 0 0);
+    pointer-events: none;
+}
+
+.box .img-box {
+    background-color: #171717;
+    border-radius: 100%;
+    margin-top: -12vh;
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #fff solid 7px;
+}
+
+.box .img-box img {
+    border-radius: 100%;
+    height: 14vh;
+    width: 14vh;
+    object-fit: fill;
+}
+
+.box .evnt-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+    letter-spacing: .5px;
+    line-height: 4.5vh;
+}
+
+.box p {
+    color: #fff;
+    font-size: 4vh;
+}
+
+.box .btn {
+    color: #fff;
+    margin-bottom: -9vh;
+    margin-top: 4vh;
+    background-color: var(--neon-pink);
+    height: 6vh;
+    width: 20vh;
+    border-radius: 10px;
+    border: 3px ridge #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.sc .btn{
+    background-color: #fb9f0c;
+}
 
 /* Rules */
 

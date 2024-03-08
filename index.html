@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imgs/favi.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="flipclock.css">
     <title>Scientica 2k24</title>
     <script src="https://kit.fontawesome.com/bb5440d141.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -118,11 +117,10 @@
             </div>
         </div>
         <div id="events" class="events">
-            <!-- Swiper -->
-            <div class="swiper mySwiper it">
-                <h1>IT EVENTS</h1>
-                <div class="swiper-wrapper it">
-                    <div class="swiper-slide">
+            <div class="box-main">
+                <h1>events</h1>
+                <div class="box-cont it">
+                    <div class="box">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev1.jpg">
                         </div>
@@ -132,7 +130,7 @@
                             <button onclick="displaytoggle('e1')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="box">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev2.jpg">
                         </div>
@@ -142,7 +140,7 @@
                             <button onclick="displaytoggle('e2')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="box">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev3.jpg">
                         </div>
@@ -152,7 +150,9 @@
                             <button onclick="displaytoggle('e3')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                </div>
+                <div class="box-cont it">
+                    <div class="box">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev4.jpg">
                         </div>
@@ -162,7 +162,7 @@
                             <button onclick="displaytoggle('e4')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="box">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev5.jpg">
                         </div>
@@ -173,14 +173,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination">
-                </div>
-            </div>
-
-            <div class="swiper mySwiper sc">
-                <h1>SCIENCE EVENTS</h1>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                <div class="box-cont sc" >
+                    <div class="box">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev6.jpg">
                         </div>
@@ -190,7 +184,7 @@
                             <button onclick="displaytoggle('e6')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="box">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev7.jpg">
                         </div>
@@ -200,7 +194,7 @@
                             <button onclick="displaytoggle('e7')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="box">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev8.jpg">
                         </div>
@@ -210,7 +204,9 @@
                             <button onclick="displaytoggle('e8')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                </div>
+                <div class="box-cont sc">
+                    <div class="box">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev9.jpg">
                         </div>
@@ -220,7 +216,7 @@
                             <button onclick="displaytoggle('e9')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="box">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev10.jpg">
                         </div>
@@ -231,40 +227,7 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="swiper-pagination">
-                </div>
-
-            <!-- Swiper JS -->
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper(".mySwiper", {
-                    slidesPerView: 5,
-                    effect: "coverflow",
-                    loop: true,
-                    grabCursor: true,
-                    centeredSlides: true,
-                    lazy: true,
-                    slidesPerView: "auto",
-                    coverflowEffect: {
-                        rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: true,
-                    },
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                    autoplay: {
-                        delay: 2000, // Set the delay between slides in milliseconds
-                        disableOnInteraction: false, // Set to true to disable autoplay when user interacts with the slider
-                    },
-                });
-            </script>
+            </div>
         </div>
         <div class="std-cord">
             <div class="std-box">
@@ -273,7 +236,7 @@
                 <div class="std-cont">
                     <div class="b1">
                         <div class="std">
-                            <img src="/imgs/head1.png">
+                            <img src="/imgs/nobita.png">
                             <a href="tel:+918861930329">
                                 <h4>Mr. Karthik C Malsekar<br>
                                     +91 8861930329
@@ -281,35 +244,35 @@
                             </a>
                         </div>
                         <div class="std">
-
+                            
                             <a href="tel:+916361965792">
                                 <h4>Ms. Swathi Naik<br>
                                     +91 6361965792
                                 </h4>
                             </a>
-                            <img src="/imgs/head2.png">
+                            <img src="/imgs/shizuka.jpg">
                         </div>
                     </div>
 
                     <div class="b2">
                         <div class="std">
-                            <img src="/imgs/head2.png">
+                            <img src="/imgs/shizuka.jpg">
                             <a href="tel:+919544087237">
                                 <h4>Ms. Deeptika<br>
                                     +91 9544087237
                                 </h4>
                             </a>
                         </div>
-                        <div class="std">
+                        <div class="std">  
                             <a href="tel:+917411007685">
                                 <h4>Mr. V Venkatesh<br>
                                     +91 7411007685
                                 </h4>
                             </a>
-                            <img src="/imgs/head1.png">
+                            <img src="/imgs/nobita.png">
                         </div>
                         <div class="std">
-                            <img src="/imgs/head2.png">
+                            <img src="/imgs/shizuka.jpg">
                             <a href="tel:+918867143835">
                                 <h4>Ms. Manasvi Kharvi<br>
                                     +91 8867143835
@@ -427,7 +390,7 @@
                         </div>
                         <div class="evnt-heads">
                             <div class="b1" id="b1">
-                                <img src="/imgs/head1.png">
+                                <img src="/imgs/nobita.png">
                                 <a href="tel:+919164801641">
                                     <h4>Supreeth Sharma Kudingila<br>
                                         +91 9164801641
@@ -435,7 +398,7 @@
                                 </a>
                             </div>
                             <div class="b3" id="b3">
-                                <img src="/imgs/head2.png">
+                                <img src="/imgs/shizuka.jpg">
                                 <a href="tel:+918431023641">
                                     <h4>Deekshita Prabhu<br>
                                         +91 8431023641
@@ -484,7 +447,7 @@
                         </div>
                         <div class="evnt-heads">
                             <div class="b1" id="b1">
-                                <img src="/imgs/head1.png">
+                                <img src="/imgs/nobita.png">
                                 <a href="tel:+919513463708">
                                     <h4>Adithya B R<br>
                                         +91 9513463708
@@ -492,7 +455,7 @@
                                 </a>
                             </div>
                             <div class="b3" id="b3">
-                                <img src="/imgs/head2.png">
+                                <img src="/imgs/shizuka.jpg">
                                 <a href="tel:+918867746177">
                                     <h4>Vaishnavi Kamath<br>
                                         +91 8867746177
@@ -541,7 +504,7 @@
                         </div>
                         <div class="evnt-heads">
                             <div class="b1" id="b1">
-                                <img src="/imgs/head1.png">
+                                <img src="/imgs/nobita.png">
                                 <a href="tel:+918073935847">
                                     <h4>Shreya<br>
                                         +91 8073935847
@@ -549,7 +512,7 @@
                                 </a>
                             </div>
                             <div class="b3" id="b3">
-                                <img src="/imgs/head2.png">
+                                <img src="/imgs/shizuka.jpg">
                                 <a href="tel:+917899495098">
                                     <h4>Sushmitha<br>
                                         +91 7899495098
@@ -598,7 +561,7 @@
                         </div>
                         <div class="evnt-heads">
                             <div class="b1" id="b1">
-                                <img src="/imgs/head1.png">
+                                <img src="/imgs/nobita.png">
                                 <a href="tel:+919740832951">
                                     <h4>Chinthan Rai K<br>
                                         +91 9740832951
@@ -606,7 +569,7 @@
                                 </a>
                             </div>
                             <div class="b3" id="b3">
-                                <img src="/imgs/head2.png">
+                                <img src="/imgs/shizuka.jpg">
                                 <a href="tel:+919110462084">
                                     <h4>Anish Devadiga<br>
                                         +91 9110462084
@@ -657,7 +620,7 @@
                         </div>
                         <div class="evnt-heads">
                             <div class="b1" id="b1">
-                                <img src="/imgs/head1.png">
+                                <img src="/imgs/nobita.png">
                                 <a href="tel:+919895018424">
                                     <h4>Vikyath U<br>
                                         +91 9895018424
@@ -665,7 +628,7 @@
                                 </a>
                             </div>
                             <div class="b3" id="b3">
-                                <img src="/imgs/head2.png">
+                                <img src="/imgs/shizuka.jpg">
                                 <a href="tel:+918197654111">
                                     <h4>Thejashree P<br>
                                         +91 8197654111
@@ -714,7 +677,7 @@
                         </div>
                         <div class="evnt-heads">
                             <div class="b1" id="b1">
-                                <img src="/imgs/head1.png">
+                                <img src="/imgs/nobita.png">
                                 <a href="tel:+918296564200">
                                     <h4>Kalpesh<br>
                                         +91 8296564200
@@ -722,7 +685,7 @@
                                 </a>
                             </div>
                             <div class="b3" id="b3">
-                                <img src="/imgs/head2.png">
+                                <img src="/imgs/shizuka.jpg">
                                 <a href="tel:+918123871748">
                                     <h4>Shravya<br>
                                         +91 8123871748
@@ -769,7 +732,7 @@
                         </div>
                         <div class="evnt-heads">
                             <div class="b1" id="b1">
-                                <img src="/imgs/head1.png">
+                                <img src="/imgs/nobita.png">
                                 <a href="tel:+916363501971">
                                     <h4>Kshama Kunder<br>
                                         +91 6363501971
@@ -777,7 +740,7 @@
                                 </a>
                             </div>
                             <div class="b3" id="b3">
-                                <img src="/imgs/head2.png">
+                                <img src="/imgs/shizuka.jpg">
                                 <a href="tel:+917736049319">
                                     <h4>Vishmitha<br>
                                         +91 7736049319
@@ -826,7 +789,7 @@
                         </div>
                         <div class="evnt-heads">
                             <div class="b1" id="b1">
-                                <img src="/imgs/head1.png">
+                                <img src="/imgs/nobita.png">
                                 <a href="tel:+918431449487">
                                     <h4>K Narasimha Puranik<br>
                                         +91 8431449487
@@ -834,7 +797,7 @@
                                 </a>
                             </div>
                             <div class="b3" id="b3">
-                                <img src="/imgs/head2.png">
+                                <img src="/imgs/shizuka.jpg">
                                 <a href="tel:+919844818599">
                                     <h4>Meghana<br>
                                         +91 9844818599
@@ -866,8 +829,7 @@
                         <div class="content">
                             <p class="heading">Description :</p>
                             <br>
-                            <p>Discover the joy of the bio-world at "Vries Resilience". Unlock the mysteries of flora
-                                and
+                            <p>Discover the joy of the bio-world at "Vries Resilience". Unlock the mysteries of flora and
                                 fauna using knowledge and creativity. Join us, where curiosity meets amusement in
                                 decoding ancient lore puzzles.
                             </p>
@@ -884,7 +846,7 @@
                         </div>
                         <div class="evnt-heads">
                             <div class="b1" id="b1">
-                                <img src="/imgs/head1.png">
+                                <img src="/imgs/nobita.png">
                                 <a href="tel:+919731295457">
                                     <h4>Soumya<br>
                                         +91 9731295457
@@ -892,7 +854,7 @@
                                 </a>
                             </div>
                             <div class="b3" id="b3">
-                                <img src="/imgs/head2.png">
+                                <img src="/imgs/shizuka.jpg">
                                 <a href="tel:+919019958031">
                                     <h4>Ananya<br>
                                         +91 9019958031
@@ -942,7 +904,7 @@
                         </div>
                         <div class="evnt-heads">
                             <div class="b1" id="b1">
-                                <img src="/imgs/head1.png">
+                                <img src="/imgs/nobita.png">
                                 <a href="tel:+918606894577">
                                     <h4>Krithika Shetty<br>
                                         +91 8606894577
@@ -950,7 +912,7 @@
                                 </a>
                             </div>
                             <div class="b3" id="b3">
-                                <img src="/imgs/head2.png">
+                                <img src="/imgs/shizuka.jpg">
                                 <a href="tel:+918618134750">
                                     <h4>Disha Kulal<br>
                                         +91 8618134750
@@ -969,6 +931,11 @@
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
         if (window.innerWidth > 600) {
+            VanillaTilt.init(document.querySelectorAll(".box"), {
+                max: 20,
+                speed: 400
+            });
+
             VanillaTilt.init(document.querySelectorAll(".std"), {
                 max: 10,
                 speed: 400
