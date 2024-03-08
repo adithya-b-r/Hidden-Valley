@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imgs/favi.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="flipclock.css">
+    <link rel="stylesheet" href="swiper.css">
     <title>Scientica 2k24</title>
     <script src="https://kit.fontawesome.com/bb5440d141.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -117,10 +118,11 @@
             </div>
         </div>
         <div id="events" class="events">
-            <div class="box-main">
-                <h1>events</h1>
-                <div class="box-cont it">
-                    <div class="box">
+            <!-- Swiper -->
+            <div class="swiper mySwiper it">
+                <h1>IT EVENTS</h1>
+                <div class="swiper-wrapper it">
+                    <div class="swiper-slide">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev1.jpg">
                         </div>
@@ -130,7 +132,7 @@
                             <button onclick="displaytoggle('e1')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="swiper-slide">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev2.jpg">
                         </div>
@@ -140,7 +142,7 @@
                             <button onclick="displaytoggle('e2')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="swiper-slide">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev3.jpg">
                         </div>
@@ -150,9 +152,7 @@
                             <button onclick="displaytoggle('e3')" class="btn">Read More</button>
                         </div>
                     </div>
-                </div>
-                <div class="box-cont it">
-                    <div class="box">
+                    <div class="swiper-slide">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev4.jpg">
                         </div>
@@ -162,7 +162,7 @@
                             <button onclick="displaytoggle('e4')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="swiper-slide">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev5.jpg">
                         </div>
@@ -173,8 +173,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="box-cont sc" >
-                    <div class="box">
+                <div class="swiper-pagination">
+                </div>
+            </div>
+
+            <div class="swiper mySwiper sc">
+                <h1>SCIENCE EVENTS</h1>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev6.jpg">
                         </div>
@@ -184,7 +190,7 @@
                             <button onclick="displaytoggle('e6')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="swiper-slide">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev7.jpg">
                         </div>
@@ -194,7 +200,7 @@
                             <button onclick="displaytoggle('e7')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="swiper-slide">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev8.jpg">
                         </div>
@@ -204,9 +210,7 @@
                             <button onclick="displaytoggle('e8')" class="btn">Read More</button>
                         </div>
                     </div>
-                </div>
-                <div class="box-cont sc">
-                    <div class="box">
+                    <div class="swiper-slide">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev9.jpg">
                         </div>
@@ -216,7 +220,7 @@
                             <button onclick="displaytoggle('e9')" class="btn">Read More</button>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="swiper-slide">
                         <div class="img-box">
                             <img src="/imgs/evnts/ev10.jpg">
                         </div>
@@ -227,7 +231,39 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination">
+                </div>
             </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 5,
+                    effect: "coverflow",
+                    loop: true,
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: "auto",
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
         </div>
         <div class="std-cord">
             <div class="std-box">
@@ -244,7 +280,7 @@
                             </a>
                         </div>
                         <div class="std">
-                            
+
                             <a href="tel:+916361965792">
                                 <h4>Ms. Swathi Naik<br>
                                     +91 6361965792
@@ -263,7 +299,7 @@
                                 </h4>
                             </a>
                         </div>
-                        <div class="std">  
+                        <div class="std">
                             <a href="tel:+917411007685">
                                 <h4>Mr. V Venkatesh<br>
                                     +91 7411007685
@@ -829,7 +865,8 @@
                         <div class="content">
                             <p class="heading">Description :</p>
                             <br>
-                            <p>Discover the joy of the bio-world at "Vries Resilience". Unlock the mysteries of flora and
+                            <p>Discover the joy of the bio-world at "Vries Resilience". Unlock the mysteries of flora
+                                and
                                 fauna using knowledge and creativity. Join us, where curiosity meets amusement in
                                 decoding ancient lore puzzles.
                             </p>
@@ -931,11 +968,6 @@
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
         if (window.innerWidth > 600) {
-            VanillaTilt.init(document.querySelectorAll(".box"), {
-                max: 20,
-                speed: 400
-            });
-
             VanillaTilt.init(document.querySelectorAll(".std"), {
                 max: 10,
                 speed: 400
