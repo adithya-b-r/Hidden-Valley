@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flipclock.css">
+    <title>Scientica 2k24</title>
+    <script src="https://kit.fontawesome.com/bb5440d141.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav id="navbar" class="nav-bar">
+        <div class="logo">
+            <h1 class="logo-glow">
+                Scientica 24</h1>
+            <i id="toggle1" class="fa-solid fa-bars fa-2xl"></i>
+            <i id="toggle2" class="fa-solid fa-xmark fa-2xl"></i>
+        </div>
+
+        <div class="dropdown-menu">
+            <a href="#home">
+                <li>Home</li>
+            </a>
+            <a href="#about">
+                <li>About</li>
+            </a>
+            <a href="#events">
+                <li>Events</li>
+            </a>
+            <a href="#rules">
+                <li>Rules</li>
+            </a>
+            <a href="#contact">
+                <li>contact</li>
+            </a>
+            <a href="/Scientica24.pdf" download="Scientica-2024.pdf">
+                <li>Brochure</li>
+            </a>
+        </div>
+
+        <ul class="nav-ul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#rules">Rules</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="/Scientica24.pdf" download="Scientica-2024.pdf">Brochure</a></li>
+            <div id="marker"></div>
+            <script>
+                let marker = document.querySelector('#marker');
+                let item = document.querySelectorAll('nav li');
+
+                window.onload = function () {
+                    let marker = document.querySelector('#marker');
+                    let homeItem = document.querySelector('li a[href="#home"]');
+
+                    if (homeItem) {
+                        marker.style.left = homeItem.offsetLeft + 'px';
+                        marker.style.width = homeItem.offsetWidth + 'px';
+                    }
+                }
+
+                function indicator(e) {
+                    marker.style.left = e.offsetLeft + 'px';
+                    marker.style.width = e.offsetWidth + 'px';
+                }
+
+                item.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        indicator(e.target);
+                    });
+                });
+            </script>
+        </ul>
+        <div class="reg-now">
+            <button onclick="redirectToRegistration()" class="neon-button" type="button">Register Now</button>
+        </div>
+    </nav>
+    <div id="pg" class="page-group">
+        <div class="bg">
+            <div class="bubbles">
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+            </div>
+        </div>
+        <div id="home" class="home">
+            <div class="home-text">
+                <h1>Scientica 2024</h1>
+                <h3>Cluster The Creations</h3>
+                <p>National Level Inter-Collegiate Fest
+                    <br>
+                    March 11 - 12, 2023
+                </p>
+                <div class="reg-now">
+                    <button onclick="redirectToRegistration()" class="neon-button" type="button">Register Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="about">
+            <div class="about-cont">
+
+                <h1 class="neon-fire">About the Institution</h1>
+                <p>Canara College with its noble vision to prepare educationally empowered and culturally vibrant
+                    students;
+                    is a prestigious institute for higher learning, well acclaimed to have its deep-rooted existence
+                    since
+                    1973 with its moral ideas, rich core values and fusion of cultural ethos. It has a glorious history
+                    and
+                    legacy in the field of imparting value-based, character building education to its aspirants. True to
+                    its
+                    philosophy of commitment towards offering quality education at an affordable cost, it is located
+                    centrally in the coastal educational hub of Mangaluru city. The institution is pioneered by a great
+                    visionary and philanthropist our revered founder Late Sri Ammembal Subba Rao Pai.</p>
+                <br><br>
+                <h1 class="neon-fire">About Scientica 24</h1>
+                <p>‘Scientica 24’ aims to inspire and nurture interest and appreciation of Science and Information
+                    Technology amongst young people. It explores and develops new technologies that push the limits of
+                    what
+                    is currently possible.</p>
+            </div>
+        </div>
+        <div id="events" class="events">
+            <div class="box-main">
+                <h1>events</h1>
+                <div class="box-cont it">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev1.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Ada's Legacy</p>
+                            <p>[Coding Event]</p>
+                            <button onclick="displaytoggle('e1')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev2.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Berners Blueprint</p>
+                            <p>[Web Designing Event]</p>
+                            <button onclick="displaytoggle('e2')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev3.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Kalam's Vision</p>
+                            <p>[IT Manager Event]</p>
+                            <button onclick="displaytoggle('e3')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-cont it">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev4.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Scout-It-Out</p>
+                            <p>[Gaming Event]</p>
+                            <button onclick="displaytoggle('e4')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev5.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Leibovitz Hitz</p>
+                            <p>[Photography Event]</p>
+                            <button onclick="displaytoggle('e5')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-cont sc" >
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev6.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Newton's Novel</p>
+                            <p>[Physics Event]</p>
+                            <button onclick="displaytoggle('e6')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev7.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Huygen's Collision</p>
+                            <p>[Chemistry Event]</p>
+                            <button onclick="displaytoggle('e7')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev8.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Xenarc</p>
+                            <p>[Mathematics Event]</p>
+                            <button onclick="displaytoggle('e8')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-cont sc">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev9.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Vries Resilience</p>
+                            <p>[Biology Event]</p>
+                            <button onclick="displaytoggle('e9')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev10.jpg">
+                        </div>
+                        <div class="evnt-name">
+                            <p>Da Vinci's Dazzle</p>
+                            <p>[Variety Event]</p>
+                            <button onclick="displaytoggle('e10')" class="btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="std-cord">
+            <div class="std-box">
+                <h1>Student Conveners</h1>
+
+                <div class="std-cont">
+                    <div class="b1">
+                        <div class="std">
+                            <img src="/imgs/head1.png">
+                            <a href="tel:+918861930329">
+                                <h4>Mr. Karthik C Malsekar<br>
+                                    +91 8861930329
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="std">
+                            
+                            <a href="tel:+916361965792">
+                                <h4>Ms. Swathi Naik<br>
+                                    +91 6361965792
+                                </h4>
+                            </a>
+                            <img src="/imgs/head2.png">
+                        </div>
+                    </div>
+
+                    <div class="b2">
+                        <div class="std">
+                            <img src="/imgs/head2.png">
+                            <a href="tel:+919544087237">
+                                <h4>Ms. Deeptika<br>
+                                    +91 9544087237
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="std">  
+                            <a href="tel:+917411007685">
+                                <h4>Mr. V Venkatesh<br>
+                                    +91 7411007685
+                                </h4>
+                            </a>
+                            <img src="/imgs/head1.png">
+                        </div>
+                        <div class="std">
+                            <img src="/imgs/head2.png">
+                            <a href="tel:+918867143835">
+                                <h4>Ms. Manasvi Kharvi<br>
+                                    +91 8867143835
+                                </h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <div id="rules" class="rules">
+            <div class="rules-container">
+                <div class="ribbon-box">
+                    <div class="ribbon">
+                        <h1>Rules & Regulations</h1>
+                    </div>
+                </div>
+                <div class="rules-grp">
+                    <ul>
+                        <li>The Fest is open to undergraduate students of Science and IT.</li>
+                        <li>Only one team with maximum 18 participants per college is allowed.</li>
+                        <li>Teams must confirm their participation by contacting the faculty/ student conveners or
+                            by registering online on or before March 9, 2024.</li>
+                        <li>Participants are expected to report by 8:30 AM on March 11, 2024.</li>
+                        <li>Participants must be dressed in formal attire on both the days of the fest.</li>
+                        <li>Participants are expected to have their own personal accessories and gadgets.</li>
+                        <li>The participating teams must abide by all the rules and regulations.</li>
+                        <li>Any kind of disrespectful behaviour will not be tolerated and will lead to entire team's
+                            disqualification.</li>
+                        <li>Only those teams which participate in all the events are eligible for the
+                            overall championship.</li>
+                        <li>Overall trophy will be awarded based on maximum points scored in all events.</li>
+                        <li>The organizers reserve the right to take decisions and amend the rules and regulations of
+                            any event.</li>
+                        <li>Judges and Organizers decisions are final and binding.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact">
+            <div class="box-cont">
+                <div class="box1" id="box1">
+                    <div class="contact-us">
+                        <h1>Contact</h1>
+                        <div class="address">
+                            <!-- <h1>College Address</h1> -->
+                            <p> <span class="cn">Canara College</span> <br>
+                                Mahatma Gandhi Road, Kodialbail, <br>
+                                Mangaluru – 575003,<br>
+                                Dakshina Kannada District, Karnataka</p>
+                            <br>
+
+                            <p><i class="fa-solid fa-phone fa-bounce"> </i> +91 8242492366</p>
+                            <p><i class="fa-regular fa-envelope fa-bounce"> </i> contact@canaracollege.org</p>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <h1>Quick Links</h1>
+                        <li><i class="fa-solid fa-arrow-right fa-xs"></i><a href="#home">Home</a></li>
+                        <li><i class="fas fa-arrow-right fa-xs"></i><a href="#about">About</a></li>
+                        <li><i class="fas fa-arrow-right fa-xs"></i><a href="#events">Events</a></li>
+                        <li><i class="fas fa-arrow-right fa-xs"></i><a href="#rules">Rules</a></li>
+                        <li><i class="fas fa-arrow-right fa-xs"></i><a href="/Scientica24.pdf"
+                                download="Scientica-2024.pdf">Download Brochure</a></li>
+                    </div>
+                    <div class="map">
+                        <!-- Google Maps -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.45212601554!2d74.83896660978672!3d12.87862321685923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba350a13025ca43%3A0xc377faaf3db7a9c3!2sCanara%20College!5e0!3m2!1sen!2sin!4v1707029359590!5m2!1sen!2sin"
+                            style=" height: 100%; width:100%; border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="box2">
+                    <a href="https://www.canaracollege.com/" class="fa-solid fa-house"></a>
+                    <a href="https://www.facebook.com/canaracollegemangaluru" class="fab fa-facebook-f"></a>
+                    <a href="https://www.instagram.com/canara.college_official" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/school/canara-college" class="fab fa-linkedin"></a>
+                    <a href="https://www.youtube.com/@CanaraCollege-zm3wz/" class="fab fa-youtube"></a>
+                </div>
+                <footer>
+                    <p>&copy; Scientica 2024. Designed and Developed by <a href="https://www.linkedin.com/in/adithya-b-r-67b837291/" target="_blank">Adithya B R</a></p>
+                </footer>
+            </div>
+        </div>
+
+        <div id="e1" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Ada's Legacy</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev1.jpg">
+                        </div>
+                        <br>
+                        <h1>Coding Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Elevate your problem-solving skills, conquer intricate challenges, and immerse yourself
+                                in a community of forward-thinking coders.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant per team. <br>
+                                2. It is essential that participant knows C, C++, Java programming and SQL<br>
+                            </p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/Evnt_heads/CODE_1.jpg">
+                                <a href="tel:+919164801641">
+                                    <h4>Supreeth Sharma Kudingila<br>
+                                        +91 9164801641
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/Evnt_heads/CODE_2.jpg">
+                                <a href="tel:+918431023641">
+                                    <h4>Deekshita Prabhu<br>
+                                        +91 8431023641
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e2" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Berners Blueprint</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev2.jpg">
+                        </div>
+                        <br>
+                        <h1>Web Designing Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Weaving the Future of the Web, an electrifying rendezvous where design meets destiny.
+                                Enter the digital agora of Berners Blueprint, where pixels dance in symphony, and
+                                creativity paints the canvas of possibility.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant per team. <br>
+                                2. Participants are expected to know HTML, CSS and JavaScript.<br>
+                            </p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/Evnt_heads/WEB_1.jpg">
+                                <a href="tel:+919513463708">
+                                    <h4>Adithya B R<br>
+                                        +91 9513463708
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/Evnt_heads/WEB_2.jpg">
+                                <a href="tel:+918867746177">
+                                    <h4>Vaishnavi Kamath<br>
+                                        +91 8867746177
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e3" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Kalam's Vision</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev3.jpg">
+                        </div>
+                        <br>
+                        <h1>IT Manager Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Dr. Kalam's extraordinary foresight and ability to construct nations serve as a shining
+                                example for ambitious managers. Do you have the drive, determination, and vision to
+                                become the Best IT Manager?</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant per team. <br>
+                                2. It is a compulsory event. <br>
+                            </p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/Evnt_heads/ITM_2.jpg">
+                                <a href="tel:+918073935847">
+                                    <h4>Shreya<br>
+                                        +91 8073935847
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/Evnt_heads/ITM_1.jpg">
+                                <a href="tel:+917899495098">
+                                    <h4>Sushmitha<br>
+                                        +91 7899495098
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e4" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Scout-It-Out</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev4.jpg">
+                        </div>
+                        <br>
+                        <h1>Gaming Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Dive into a gaming adventure! Compete, strategize, and emerge
+                                victorious. Join us now!
+                            </p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant per team. <br>
+                                2. BGMI Classic Match. <br>
+                            </p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/head1.png">
+                                <a href="tel:+919740832951">
+                                    <h4>Chinthan Rai K<br>
+                                        +91 9740832951
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/head2.png">
+                                <a href="tel:+919110462084">
+                                    <h4>Anish Devadiga<br>
+                                        +91 9110462084
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e5" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Leibovitz Hitz</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev5.jpg">
+                        </div>
+                        <br>
+                        <h1>Photography Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Step into the captivating world of Annie Leibovitz's lens, where every frame tells a
+                                story, every subject reveals a deeper truth, and every moment is frozen in timeless
+                                allure.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. One participant per team. <br>
+                                2. Participants must bring their own laptop, editing softwares, recording equipments and
+                                accessories. <br>
+                                3. Drones are not allowed.
+                            </p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/Evnt_heads/PV_1.jpg">
+                                <a href="tel:+919895018424">
+                                    <h4>Vikyath U<br>
+                                        +91 9895018424
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/Evnt_heads/PV_2.jpg">
+                                <a href="tel:+918197654111">
+                                    <h4>Thejashree P<br>
+                                        +91 8197654111
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e6" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Newton's Novel</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev6.jpg">
+                        </div>
+                        <br>
+                        <h1>Physics Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Welcome to Newton's Novel Event, where we explore the wonders of science, technology and
+                                creativity. Join us to push the boundaries of physics and unleash your creativity in a
+                                simple and extraordinary journey.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. Two participants per team. <br>
+                                2. Participants should have theoretical and practical knowledge of Physics. <br>
+                            </p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/Evnt_heads/PHY_1.jpg">
+                                <a href="tel:+918296564200">
+                                    <h4>Kalpesh<br>
+                                        +91 8296564200
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/Evnt_heads/PHY_2.jpg">
+                                <a href="tel:+918123871748">
+                                    <h4>Shravya<br>
+                                        +91 8123871748
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e7" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Huygen's Collision</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev7.jpg">
+                        </div>
+                        <br>
+                        <h1>Chemistry Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Chemistry enthusiasts, join our exciting event! Experience dynamic reactions in a
+                                strategic board game-like setting, where elements align playfully. Don't miss out!</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. Two participants per team. <br>
+                                2. Participants should have theoretical and practical knowledge of Chemistry.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/Evnt_heads/CHEM_1.jpg">
+                                <a href="tel:+916363501971">
+                                    <h4>Kshama Kunder<br>
+                                        +91 6363501971
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/Evnt_heads/CHEM_2.jpg">
+                                <a href="tel:+917736049319">
+                                    <h4>Vishmitha<br>
+                                        +91 7736049319
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e8" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Xenarc</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev8.jpg">
+                        </div>
+                        <br>
+                        <h1>Mathematics Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Embark on a fascinating journey through the history of math, from Euclidean geometry to
+                                calculus and modern algebra, Immerse yourself in the evolving story of mathematical
+                                discovery.</p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. Two participants per team <br>
+                                2. Participants must bring their own scientific calculators. <br>
+                                3. Participants should have theoretical and practical knowledge of Mathematics.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/Evnt_heads/MATH_1.jpg">
+                                <a href="tel:+918431449487">
+                                    <h4>K Narasimha Puranik<br>
+                                        +91 8431449487
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/Evnt_heads/MATH_2.jpg">
+                                <a href="tel:+919844818599">
+                                    <h4>Meghana<br>
+                                        +91 9844818599
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e9" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Vries Resilience</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev9.jpg">
+                        </div>
+                        <br>
+                        <h1>Biology Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Discover the joy of the bio-world at "Vries Resilience". Unlock the mysteries of flora and
+                                fauna using knowledge and creativity. Join us, where curiosity meets amusement in
+                                decoding ancient lore puzzles.
+                            </p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. Two participant per team <br>
+                                2. Open to all students of any Life Science background.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/Evnt_heads/VR_1.jpg">
+                                <a href="tel:+919731295457">
+                                    <h4>Soumya<br>
+                                        +91 9731295457
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/Evnt_heads/VR_2.jpg">
+                                <a href="tel:+919019958031">
+                                    <h4>Ananya<br>
+                                        +91 9019958031
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+        <div id="e10" class="evnt-container">
+            <div class="evnt-details">
+                <div class="evnt-header">
+                    <h1>Da Vinci's Dazzle</h1>
+                    <i class="fa-solid fa-xmark fa-2xl" onclick="hide()"></i>
+                </div>
+                <div class="evnt-body">
+                    <div class="b2" id="b2">
+                        <div class="img-box">
+                            <img src="/imgs/evnts/ev10.jpg">
+                        </div>
+                        <br>
+                        <h1>Variety Event</h1>
+                        <br>
+                        <div class="content">
+                            <p class="heading">Description :</p>
+                            <br>
+                            <p>Experience the ultimate fusion of science and entertainment at Da Vinci's Dazzle! Join us
+                                for a fun-filled celebration where intellect meets excitement, featuring laughter,
+                                competitions and captivating activities.
+                                Don't miss the chance to enjoy learning in a festive atmosphere!
+                            </p>
+                            <br>
+                            <p class="heading">General Rules :
+                            </p>
+                            <br>
+                            <p>1. Two participant per team. <br>
+                                2. Students must have basic knowledge in Science, Arts and Culture.</p>
+                            <br>
+                            <hr>
+                            <h3 class="heads">Event Heads</h3>
+                            <hr>
+                        </div>
+                        <div class="evnt-heads">
+                            <div class="b1" id="b1">
+                                <img src="/imgs/Evnt_heads/DD_1.jpg">
+                                <a href="tel:+918606894577">
+                                    <h4>Krithika Shetty<br>
+                                        +91 8606894577
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="b3" id="b3">
+                                <img src="/imgs/Evnt_heads/DD_2.jpg">
+                                <a href="tel:+918618134750">
+                                    <h4>Disha Kulal<br>
+                                        +91 8618134750
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evnt-footer">
+                    <h2>March 11 - 12, 2024</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        if (window.innerWidth > 600) {
+            VanillaTilt.init(document.querySelectorAll(".box"), {
+                max: 20,
+                speed: 400
+            });
+
+            VanillaTilt.init(document.querySelectorAll(".std"), {
+                max: 10,
+                speed: 400
+            });
+
+            VanillaTilt.init(document.querySelectorAll(".home-text"), {
+                max: 10,
+                speed: 100
+            });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
