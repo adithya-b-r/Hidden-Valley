@@ -29,6 +29,7 @@ body {
     font-family: 'Teko', 'Oswald', sans-serif;
     overflow: hidden;
     background-color: #0c192c;
+    user-select: none;
 }
 
 ::-webkit-scrollbar {
